@@ -36,29 +36,41 @@
         </div>
     </header>
     <main class="main-content">
-        <div class="input-group">
-            <input required="" type="text" name="text" autocomplete="off" class="input">
-            <label class="user-label"> Title for task </label>
+        <div class="main-content__big-container">
+            <div class="input-group">
+                <input required="" type="text" name="text" autocomplete="off" class="input">
+                <label class="user-label"> Title for task </label>
+            </div>
+            <div class="img-container">
+                <div></div>
+            </div>
+            <div class="textarea-container">
+                <textarea class="textarea" name="task" id="" placeholder="Task"></textarea>
+            </div>
+            <div class="data-container">
+                <input class="main-input" type="date" name="" id="">
+                <input class="main-input" type="date" name="" id="">
+            </div>
+            <div class="main-select__container">
+                <select class="main-select" name="task" id="task">
+                    <option class="main-option" value="Select Task Priority" disabled selected>Select Task Priority
+                    </option>
+                    <option class="main-option" value="low">Low</option>
+                    <option class="main-option" value="medium">Medium</option>
+                    <option class="main-option" value="high">High</option>
+                </select>
+            </div>
+            <div class="task-category">
+                <input required="" type="text" name="task-category" autocomplete="off" class="input">
+                <label class="user-label"> task-category </label>
+            </div>
+            <div class="responsible-category">
+                <input required="" type="text" name="responsible -category" autocomplete="off" class="input">
+                <label class="user-label"> responsible </label>
+                <button class="responsible__button black-button"> + </button>
+            </div>
         </div>
-        <div class="textarea-container">
-            <textarea class="textarea" name="task" id="" placeholder="Task"></textarea>
-        </div>
-        <div class="data-container">
-            <input class="main-input" type="date" name="" id="">
-            <input class="main-input" type="date" name="" id="">
-        </div>
-        <div class="main-select__container">
-            <select class="main-select" name="task" id="task">
-                <option class="main-option" value="Select Task Priority" disabled selected>Select Task Priority</option>
-                <option class="main-option" value="low">Low</option>
-                <option class="main-option" value="medium">Medium</option>
-                <option class="main-option" value="high">High</option>
-            </select>
-        </div>
-        <div class="task-category">
-        <input required="" type="text" name="task-category" autocomplete="off" class="input">
-        <label class="user-label"> task-category </label>
-    </div>
+
     </main>
 </body>
 
