@@ -22,21 +22,34 @@
 <body>
     <header class="main-header">
         <div class="container">
-            <ul class="main-header__list">
-                <li class="main-header__item"><a class="main-header__link" href="">Home</a></li>
-                <li class="main-header__item"><a class="main-header__link" href="">Planned</a> </li>
-                <div class="card">
-                    <div class="card2">
-                        <a class="main-header__link--special" href="">new task!</a>
-                    </div>
-                </div>
-                <li class="main-header__item"><a class="main-header__link" href=""> In Progress</a> </li>
-                <li class="main-header__item"><a class="main-header__link" href="">Completed</a></li>
-            </ul>
+            <div class="taskMe">
+                <img class="main-header__img" src="img/task-icon.png" alt="">
+                <h1 class="main-header__title">TaskMe</h1>
+            </div>
+            <div class="main-header__form">
+                <form action="/search" method="get" class="search-bar main-header__form">
+                <input type="search" name="query" placeholder="Search...">
+            </form>
+            </div>
+            
+            <div class="main-header__newNotification">
+                <img class="main-header__img--2" src="img/free-icon-notification-bell-3930663.png" alt="">
+                <span class="main-header__span">0</span>
+            </div>
+            <a href=""><img class="img-profile" src="" alt="">you_profile</a>
         </div>
     </header>
     <main class="main-content">
-        <div class="main-content__big-container">
+        <!-- <div class="container">
+            <ul class="main-header__list">
+                <li class="main-header__item"><a class="main-header__link" href="">Home</a></li>
+                <li class="main-header__item"><a class="main-header__link" href="">Planned</a> </li>
+               
+                <li class="main-header__item"><a class="main-header__link" href=""> In Progress</a> </li>
+                <li class="main-header__item"><a class="main-header__link" href="">Completed</a></li>
+            </ul>
+        </div> -->
+        <!-- <div class="main-content__big-container">
             <div class="input-group">
                 <input required="" type="text" name="text" autocomplete="off" class="input">
                 <label class="user-label"> Title for task </label>
@@ -69,7 +82,7 @@
                 <label class="user-label"> responsible </label>
                 <button class="responsible__button black-button"> + </button>
             </div>
-        </div>
+        </div> -->
 
     </main>
 </body>
