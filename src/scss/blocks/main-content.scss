@@ -1,3 +1,8 @@
+.main-content{
+    display: flex;
+    gap: 150px;
+}
+
 .main-content__big-container{
 display: flex;
 flex-direction: column;
@@ -203,4 +208,120 @@ input:valid~label {
     font-family: Roboto;
     color: #ffffff;
     font-size: 26px;
+}
+.main-content__navigation {
+    margin-top: 30px;
+}
+
+
+
+.main__content__img {
+    width: 25px;
+    height: 25px;
+}
+
+.main-content__item {
+    width: 150px;
+    padding-top: 25px;
+}
+
+.main-content__button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: background-color 0.3s ease;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.main-content__button:hover {
+    background-color: #e0f0ff;
+    cursor: pointer;
+}
+
+.main-content__button.selected {
+    background-color: #0084ff; 
+    color: white; 
+}
+
+.main-content__list{
+    width: 200px;
+}
+.main-content__navigation{
+    margin-left: 30px;
+}
+
+.content-item {
+    display: none;
+}
+.content-item.active {
+    display: block;
+}
+
+
+.main-content__details {
+    width: 1600px;
+    height: 860px;
+    background: #f3f2f2;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.main-content__white-div {
+    width: 310px;
+    height: 130px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    display: flex;
+    
+}
+
+.main-content__blocks-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 20px;
+   
+}
+
+.main-content__title-bocks {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #686969;
+    font-weight: 400;
+}
+
+.main-content__text {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 5px ;
+}
+
+.main-content__info-text{
+    font-family: Roboto;
+    font-size: 12px;
+    color: #cecdcd;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.container-blue{
+    width: 40px;
+    height: 40px;
+    background: #087deb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 140px;
 }

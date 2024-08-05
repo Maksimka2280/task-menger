@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>work-list</title>
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -28,6 +33,7 @@
             </div>
             <div class="main-header__form">
                 <form action="/search" method="get" class="search-bar main-header__form">
+                    <img src="img/lypa.png" alt="Search Icon" class="search-icon">
                     <input class="main-header__input" type="search" name="query" placeholder="Search...">
                 </form>
             </div>
@@ -40,102 +46,144 @@
             <div class="profile__container">
                 <a class="main-header__img-profile" href=""><img class="img-profile" src="" alt="">CA</a>
             </div>
-
         </div>
     </header>
     <main class="main-content">
         <div class="main-content__navigation">
             <ul class="main-content__list">
-                <li class="main-content__item" id="dashboard"> 
-                    <button class="main-content__button blueButton" data-default-icon="img/dashboard.png" data-selected-icon="img/dashboardwhite.png">
+                <li class="main-content__item active" id="dashboard" onclick="showTab('dashboard')">
+                    <button class="main-content__button">
                         <img class="main__content__img" src="img/dashboardwhite.png" alt="">
                         Dashboard
                     </button>
                 </li>
-                <li class="main-content__item" id="task"> 
-                    <button class="main-content__button blueButton" data-default-icon="img/calendar.png" data-selected-icon="img/calendarwhite.png">
+                <li class="main-content__item" id="task" onclick="showTab('task')">
+                    <button class="main-content__button">
                         <img class="main__content__img" src="img/calendar.png" alt="">
                         Task
                     </button>
                 </li>
-                <li class="main-content__item" id="completed"> 
-                    <button class="main-content__button blueButton" data-default-icon="img/check-mark.png" data-selected-icon="img/check-markwhite.png">
+                <li class="main-content__item" id="completed" onclick="showTab('completed')">
+                    <button class="main-content__button">
                         <img class="main__content__img" src="img/check-mark.png" alt="">
                         Completed
                     </button>
                 </li>
-                <li class="main-content__item" id="in-progress"> 
-                    <button class="main-content__button blueButton" data-default-icon="img/clipboard.png" data-selected-icon="img/clipboardwhite.png">
+                <li class="main-content__item" id="in-progress" onclick="showTab('in-progress')">
+                    <button class="main-content__button">
                         <img class="main__content__img" src="img/clipboard.png" alt="">
                         In Progress
                     </button>
                 </li>
-                <li class="main-content__item" id="to-do"> 
-                    <button class="main-content__button blueButton" data-default-icon="img/clipboard.png" data-selected-icon="img/clipboardwhite.png">
+                <li class="main-content__item" id="to-do" onclick="showTab('to-do')">
+                    <button class="main-content__button">
                         <img class="main__content__img" src="img/clipboard.png" alt="">
                         To Do
                     </button>
                 </li>
-                <li class="main-content__item" id="team"> 
-                    <button class="main-content__button blueButton" data-default-icon="img/group-chat.png" data-selected-icon="img/group-chatwhite.png">
+                <li class="main-content__item" id="team" onclick="showTab('team')">
+                    <button class="main-content__button">
                         <img class="main__content__img" src="img/group-chat.png" alt="">
                         Team
                     </button>
                 </li>
-                <li class="main-content__item" id="trash"> 
-                    <button class="main-content__button blueButton" data-default-icon="img/trash.png" data-selected-icon="img/trashwhite.png">
+                <li class="main-content__item" id="trash" onclick="showTab('trash')">
+                    <button class="main-content__button">
                         <img class="main__content__img" src="img/trash.png" alt="">
                         Trash
                     </button>
                 </li>
             </ul>
         </div>
-        
-        <!-- <div class="container">
-            <ul class="main-header__list">
-                <li class="main-header__item"><a class="main-header__link" href="">Home</a></li>
-                <li class="main-header__item"><a class="main-header__link" href="">Planned</a> </li>
-               
-                <li class="main-header__item"><a class="main-header__link" href=""> In Progress</a> </li>
-                <li class="main-header__item"><a class="main-header__link" href="">Completed</a></li>
-            </ul>
-        </div> -->
-        <!-- <div class="main-content__big-container">
-            <div class="input-group">
-                <input required="" type="text" name="text" autocomplete="off" class="input">
-                <label class="user-label"> Title for task </label>
-            </div>
-            <div class="img-container">
-                <div></div>
-            </div>
-            <div class="textarea-container">
-                <textarea class="textarea" name="task" id="" placeholder="Task"></textarea>
-            </div>
-            <div class="data-container">
-                <input class="main-input" type="date" name="" id="">
-                <input class="main-input" type="date" name="" id="">
-            </div>
-            <div class="main-select__container">
-                <select class="main-select" name="task" id="task">
-                    <option class="main-option" value="Select Task Priority" disabled selected>Select Task Priority
-                    </option>
-                    <option class="main-option" value="low">Low</option>
-                    <option class="main-option" value="medium">Medium</option>
-                    <option class="main-option" value="high">High</option>
-                </select>
-            </div>
-            <div class="task-category">
-                <input required="" type="text" name="task-category" autocomplete="off" class="input">
-                <label class="user-label"> task-category </label>
-            </div>
-            <div class="responsible-category">
-                <input required="" type="text" name="responsible -category" autocomplete="off" class="input">
-                <label class="user-label"> responsible </label>
-                <button class="responsible__button black-button"> + </button>
-            </div>
-        </div> -->
 
+        <div class="main-content__details">
+            <div id="dashboard-content" class="content-item active">
+                <div class="main-content__blocks-container">
+                    <div class="main-content__white-div">
+                        <div class="text-container">
+                        <h2 class="main-content__title-bocks">TOTAL TASK</h2>
+                        <p class="main-content__text">0</p>
+                        <p class="main-content__info-text">0 Last month</p>
+                        </div>
+                        <div class="container-blue">
+                            <img class="main__content__img" src="img/calendar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="main-content__white-div">
+                        <div class="text-container">
+                        <h2 class="main-content__title-bocks">COMPLTED TASK</h2>
+                        <p class="main-content__text">0</p>
+                        <p class="main-content__info-text">0 Last month</p>
+                    </div>
+                    </div>
+                    <div class="main-content__white-div">
+                        <div class="text-container">
+                        <h2 class="main-content__title-bocks">TASK IN PROGRESS</h2>
+                        <p class="main-content__text">0</p>
+                        <p class="main-content__info-text">0 Last month</p>
+                    </div>
+                    </div>
+                    <div class="main-content__white-div">
+                        <div class="text-container">
+                        <h2 class="main-content__title-bocks">TODOS</h2>
+                        <p class="main-content__text">0</p>
+                        <p class="main-content__info-text">0 Last month</p>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="task-content" class="content-item">
+                <h2>Task</h2>
+                <p>Content for Task.</p>
+            </div>
+            <div id="completed-content" class="content-item">
+                <h2>Completed</h2>
+                <p>Content for Completed.</p>
+            </div>
+            <div id="in-progress-content" class="content-item">
+                <h2>In Progress</h2>
+                <p>Content for In Progress.</p>
+            </div>
+            <div id="to-do-content" class="content-item">
+                <h2>To Do</h2>
+                <p>Content for To Do.</p>
+            </div>
+            <div id="team-content" class="content-item">
+                <h2>Team</h2>
+                <p>Content for Team.</p>
+            </div>
+            <div id="trash-content" class="content-item">
+                <h2>Trash</h2>
+                <p>Content for Trash.</p>
+            </div>
+        </div>
     </main>
+    <script src="bundle.js"></script>
+    <script>
+        function showTab(tab) {
+
+            const navItems = document.querySelectorAll('.main-content__item');
+            navItems.forEach(item => {
+                item.classList.remove('active');
+            });
+
+
+            const contentItems = document.querySelectorAll('.content-item');
+            contentItems.forEach(item => {
+                item.classList.remove('active');
+            });
+
+
+            document.getElementById(tab).classList.add('active');
+            document.getElementById(tab + '-content').classList.add('active');
+        }
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('dashboard');
+        });
+    </script>
 </body>
 
 </html>

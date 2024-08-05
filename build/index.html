@@ -28,31 +28,69 @@
             </div>
             <div class="main-header__form">
                 <form action="/search" method="get" class="search-bar main-header__form">
-                <input class="main-header__input" type="search" name="query" placeholder="Search...">
-            </form>
+                    <input class="main-header__input" type="search" name="query" placeholder="Search...">
+                </form>
             </div>
-            
+
             <div class="main-header__newNotification">
-                <a class="main-header__button-img"><img class="main-header__img--2" src="img/free-icon-notification-bell-3930663.png" alt=""></a>
+                <a class="main-header__button-img"><img class="main-header__img--2"
+                        src="img/free-icon-notification-bell-3930663.png" alt=""></a>
                 <span class="main-header__span">0</span>
             </div>
             <div class="profile__container">
                 <a class="main-header__img-profile" href=""><img class="img-profile" src="" alt="">CA</a>
             </div>
-            
+
         </div>
     </header>
     <main class="main-content">
         <div class="main-content__navigation">
-           <ul class="main-content__list">
-               <li class="main-content__item"> <a href=""><img class="main__content__img" src="img/dashboardwhite.png" alt=""> <p class="main-content__text">Dashboard</p></a></li>
-               <li class="main-content__item"> <a href=""><img class="main__content__img" src="img/clipboard.png" alt=""> <p class="main-content__text">Task</p></a></li>
-               <li class="main-content__item"> <a href=""><img class="main__content__img" src="" alt=""> <p class="main-content__text"></p></a></li>
-               <li class="main-content__item"> <a href=""></a><img class="main__content__img" src="" alt=""> <p class="main-content__text"></p></li>
-               <li class="main-content__item"> <a href=""></a><img class="main__content__img" src="" alt=""> <p class="main-content__text"></p></li>
-               <li class="main-content__item"> <a href=""><img class="main__content__img" src="img/trash.png" alt=""> <p class="main-content__text">Trash</p></a></li>
-           </ul>
+            <ul class="main-content__list">
+                <li class="main-content__item" id="dashboard"> 
+                    <button class="main-content__button " data-default-icon="img/dashboard.png" data-selected-icon="img/black.png">
+                        <img class="main__content__img" src="img/dashboardwhite.png" alt="">
+                        Dashboard
+                    </button>
+                </li>
+                <li class="main-content__item" id="task"> 
+                    <button class="main-content__button " data-default-icon="img/calendar.png" data-selected-icon="img/calendarwhite.png">
+                        <img class="main__content__img" src="img/calendar.png" alt="">
+                        Task
+                    </button>
+                </li>
+                <li class="main-content__item" id="completed"> 
+                    <button class="main-content__button " data-default-icon="img/check-mark.png" data-selected-icon="img/check-markwhite.png">
+                        <img class="main__content__img" src="img/check-mark.png" alt="">
+                        Completed
+                    </button>
+                </li>
+                <li class="main-content__item" id="in-progress"> 
+                    <button class="main-content__button " data-default-icon="img/clipboard.png" data-selected-icon="img/clipboardwhite.png">
+                        <img class="main__content__img" src="img/clipboard.png" alt="">
+                        In Progress
+                    </button>
+                </li>
+                <li class="main-content__item" id="to-do"> 
+                    <button class="main-content__button " data-default-icon="img/clipboard.png" data-selected-icon="img/clipboardwhite.png">
+                        <img class="main__content__img" src="img/clipboard.png" alt="">
+                        To Do
+                    </button>
+                </li>
+                <li class="main-content__item" id="team"> 
+                    <button class="main-content__button " data-default-icon="img/group-chat.png" data-selected-icon="img/group-chatwhite.png">
+                        <img class="main__content__img" src="img/group-chat.png" alt="">
+                        Team
+                    </button>
+                </li>
+                <li class="main-content__item" id="trash"> 
+                    <button class="main-content__button " data-default-icon="img/trash.png" data-selected-icon="img/trashwhite.png">
+                        <img class="main__content__img" src="img/trash.png" alt="">
+                        Trash
+                    </button>
+                </li>
+            </ul>
         </div>
+        
         <!-- <div class="container">
             <ul class="main-header__list">
                 <li class="main-header__item"><a class="main-header__link" href="">Home</a></li>
@@ -98,6 +136,8 @@
         </div> -->
 
     </main>
+    <script src="main.js"></script>
+
 </body>
 
 </html>
