@@ -18,6 +18,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        
     <title>work-list</title>
     <style>
 
@@ -53,43 +54,43 @@
             <ul class="main-content__list">
                 <li class="main-content__item active" id="dashboard" onclick="showTab('dashboard')">
                     <button class="main-content__button">
-                        <img class="main__content__img" src="img/dashboardwhite.png" alt="">
+                        <img class="main__content__img" src="img/black.png" alt="">
                         Dashboard
                     </button>
                 </li>
                 <li class="main-content__item" id="task" onclick="showTab('task')">
-                    <button class="main-content__button">
-                        <img class="main__content__img" src="img/calendar.png" alt="">
+                    <button class="main-content__button min-gap">
+                        <img class="main__content__img--task2" src="img/black-task-icon.png" alt="">
                         Task
                     </button>
                 </li>
                 <li class="main-content__item" id="completed" onclick="showTab('completed')">
-                    <button class="main-content__button">
-                        <img class="main__content__img" src="img/check-mark.png" alt="">
+                    <button class="main-content__button  ">
+                        <img class="main__content__img" src="img/checked.png" alt="">
                         Completed
                     </button>
                 </li>
                 <li class="main-content__item" id="in-progress" onclick="showTab('in-progress')">
                     <button class="main-content__button">
-                        <img class="main__content__img" src="img/clipboard.png" alt="">
+                        <img class="main__content__img" src="img/to-do-list.png" alt="">
                         In Progress
                     </button>
                 </li>
                 <li class="main-content__item" id="to-do" onclick="showTab('to-do')">
                     <button class="main-content__button">
-                        <img class="main__content__img" src="img/clipboard.png" alt="">
+                        <img class="main__content__img" src="img/to-do-list.png" alt="">
                         To Do
                     </button>
                 </li>
                 <li class="main-content__item" id="team" onclick="showTab('team')">
                     <button class="main-content__button">
-                        <img class="main__content__img" src="img/group-chat.png" alt="">
+                        <img class="main__content__img" src="img/group.png" alt="">
                         Team
                     </button>
                 </li>
                 <li class="main-content__item" id="trash" onclick="showTab('trash')">
                     <button class="main-content__button">
-                        <img class="main__content__img" src="img/trash.png" alt="">
+                        <img class="main__content__img" src="img/trash-can.png" alt="">
                         Trash
                     </button>
                 </li>
@@ -106,7 +107,7 @@
                         <p class="main-content__info-text">0 Last month</p>
                         </div>
                         <div class="container-blue">
-                            <img class="main__content__img" src="img/calendar.png" alt="">
+                            <img class="main__content__img--task" src="img/white-icon.png" alt="">
                         </div>
                     </div>
                     <div class="main-content__white-div">
@@ -115,12 +116,18 @@
                         <p class="main-content__text">0</p>
                         <p class="main-content__info-text">0 Last month</p>
                     </div>
+                    <div class="container-green">
+                        <img class="main__content__img--comleted" src="img/complet-icon-white.png" alt="">
+                    </div>
                     </div>
                     <div class="main-content__white-div">
                         <div class="text-container">
                         <h2 class="main-content__title-bocks">TASK IN PROGRESS</h2>
                         <p class="main-content__text">0</p>
                         <p class="main-content__info-text">0 Last month</p>
+                    </div>
+                    <div class="container-yellow">
+                        <img class="main__content__img--task-in-progress" src="img/icon-white-task-2.png" alt="">
                     </div>
                     </div>
                     <div class="main-content__white-div">
@@ -129,7 +136,23 @@
                         <p class="main-content__text">0</p>
                         <p class="main-content__info-text">0 Last month</p>
                     </div>
+                    <div class="container-red">
+                        <img class="main__content__img--todo" src="img/white-todo-icon.png" alt="">
                     </div>
+                    </div>
+                </div>
+               
+                <div class="main-content__graphik__container">
+                 <div class="white-container">
+                   <h3 class="main-content__container-title">
+                      Chart by Priority
+                   </h3>
+                   <div class="canvas-container">
+                    
+                    <canvas class="myChart" id="myChart" width="1400px" height="300px" ></canvas>
+                   </div>
+                   
+                 </div>
                 </div>
 
             </div>
@@ -159,6 +182,7 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="bundle.js"></script>
     <script>
         function showTab(tab) {
@@ -183,7 +207,10 @@
         document.addEventListener('DOMContentLoaded', () => {
             showTab('dashboard');
         });
+       
+    
     </script>
+    
 </body>
 
 </html>
