@@ -18,7 +18,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <title>work-list</title>
     <style>
 
@@ -29,7 +34,7 @@
     <header class="main-header">
         <div class="container">
             <div class="taskMe">
-                <img class="main-header__img" src="img/task-icon.png" alt="">
+                <img class="main-header__img" src="img/task-logo.jfif" alt="">
                 <h1 class="main-header__title">TaskMe</h1>
             </div>
             <div class="main-header__form">
@@ -102,9 +107,9 @@
                 <div class="main-content__blocks-container">
                     <div class="main-content__white-div">
                         <div class="text-container">
-                        <h2 class="main-content__title-bocks">TOTAL TASK</h2>
-                        <p class="main-content__text">0</p>
-                        <p class="main-content__info-text">0 Last month</p>
+                            <h2 class="main-content__title-bocks">TOTAL TASK</h2>
+                            <p class="main-content__text">0</p>
+                            <p class="main-content__info-text">0 Last month</p>
                         </div>
                         <div class="container-blue">
                             <img class="main__content__img--task" src="img/white-icon.png" alt="">
@@ -112,49 +117,298 @@
                     </div>
                     <div class="main-content__white-div">
                         <div class="text-container">
-                        <h2 class="main-content__title-bocks">COMPLTED TASK</h2>
-                        <p class="main-content__text">0</p>
-                        <p class="main-content__info-text">0 Last month</p>
-                    </div>
-                    <div class="container-green">
-                        <img class="main__content__img--comleted" src="img/complet-icon-white.png" alt="">
-                    </div>
-                    </div>
-                    <div class="main-content__white-div">
-                        <div class="text-container">
-                        <h2 class="main-content__title-bocks">TASK IN PROGRESS</h2>
-                        <p class="main-content__text">0</p>
-                        <p class="main-content__info-text">0 Last month</p>
-                    </div>
-                    <div class="container-yellow">
-                        <img class="main__content__img--task-in-progress" src="img/icon-white-task-2.png" alt="">
-                    </div>
+                            <h2 class="main-content__title-bocks">COMPLTED TASK</h2>
+                            <p class="main-content__text">0</p>
+                            <p class="main-content__info-text">0 Last month</p>
+                        </div>
+                        <div class="container-green">
+                            <img class="main__content__img--comleted" src="img/complet-icon-white.png" alt="">
+                        </div>
                     </div>
                     <div class="main-content__white-div">
                         <div class="text-container">
-                        <h2 class="main-content__title-bocks">TODOS</h2>
-                        <p class="main-content__text">0</p>
-                        <p class="main-content__info-text">0 Last month</p>
+                            <h2 class="main-content__title-bocks">TASK IN PROGRESS</h2>
+                            <p class="main-content__text">0</p>
+                            <p class="main-content__info-text">0 Last month</p>
+                        </div>
+                        <div class="container-yellow">
+                            <img class="main__content__img--task-in-progress" src="img/icon-white-task-2.png" alt="">
+                        </div>
                     </div>
-                    <div class="container-red">
-                        <img class="main__content__img--todo" src="img/white-todo-icon.png" alt="">
+                    <div class="main-content__white-div">
+                        <div class="text-container">
+                            <h2 class="main-content__title-bocks">TODOS</h2>
+                            <p class="main-content__text">0</p>
+                            <p class="main-content__info-text">0 Last month</p>
+                        </div>
+                        <div class="container-red">
+                            <img class="main__content__img--todo" src="img/white-todo-icon.png" alt="">
+                        </div>
                     </div>
-                    </div>
-                </div>
-               
-                <div class="main-content__graphik__container">
-                 <div class="white-container">
-                   <h3 class="main-content__container-title">
-                      Chart by Priority
-                   </h3>
-                   <div class="canvas-container">
-                    
-                    <canvas class="myChart" id="myChart" width="1400px" height="300px" ></canvas>
-                   </div>
-                   
-                 </div>
                 </div>
 
+                <div class="main-content__graphik__container">
+                    <div class="white-container">
+                        <h3 class="main-content__container-title">
+                            Chart by Priority
+                        </h3>
+                        <div class="canvas-container">
+                            <canvas class="myChart" id="myChart" width="1400px" height="300px"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main-info__list-container">
+                    <ul class="main-content__info-list" id="list">
+                        <div class="title-container-and-text">
+                            <h3 class="task-title">Task Title</h3>
+                            <div class="text-container--3">
+                                <p class="task-info__text--2">Priority</p>
+                                <p class="task-info__text--2">Team</p>
+                                <p class="task-info__text--2">Created At</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <li class="main-contnet__item">
+
+                            <div class="main-inf0__task-info">
+                                <div class="main-info__color-task">
+                                </div>
+                                <p class="main-content__title-task">
+                                    Task-User
+                                </p>
+
+                                <div class="text-container--4">
+                                    <p class="lvl-task">
+                                        <img class="medium-img" src="img/red-strelka.png" alt="">
+                                        High
+
+                                    </p>
+                                    <div class="icon-container">
+                                        <div class="icon-people-task--1">
+                                            <p class="pepole-text-icon">WD</p>
+                                        </div>
+                                        <div class="icon-people-task--2">
+                                            <p class="pepole-text-icon">TD</p>
+                                        </div>
+                                        <div class="icon-people-task--3">
+                                            <p class="pepole-text-icon">JS</p>
+                                        </div>
+                                    </div>
+                                    <p class="main-info__data-text"> a month ago</p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <div class="line"></div>
+                        <li class="main-contnet__item">
+
+                            <div class="main-inf0__task-info">
+                                <div class="main-info__color-task">
+                                </div>
+                                <p class="main-content__title-task">
+                                    Task-User
+                                </p>
+
+                                <div class="text-container--4">
+
+                                    <p class="lvl-task">
+                                        <img class="medium-img" src="img/orange-strelka.png" alt="">
+                                        Medium
+                                    </p>
+                                    <div class="icon-container">
+                                        <div class="icon-people-task--1">
+                                            <p class="pepole-text-icon">WD</p>
+                                        </div>
+                                        <div class="icon-people-task--2">
+                                            <p class="pepole-text-icon">TD</p>
+                                        </div>
+                                        <div class="icon-people-task--3">
+                                            <p class="pepole-text-icon">JS</p>
+                                        </div>
+                                    </div>
+                                    <p class="main-info__data-text"> a month ago</p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <div class="line"></div>
+                        <li class="main-contnet__item">
+
+                            <div class="main-inf0__task-info">
+                                <div class="main-info__color-task">
+                                </div>
+                                <p class="main-content__title-task">
+                                    Task-User
+                                </p>
+
+                                <div class="text-container--4">
+
+                                    <p class="lvl-task">
+                                        Normal
+                                    </p>
+                                    <div class="icon-container">
+                                        <div class="icon-people-task--1">
+                                            <p class="pepole-text-icon">WD</p>
+                                        </div>
+                                        <div class="icon-people-task--2">
+                                            <p class="pepole-text-icon">TD</p>
+                                        </div>
+                                        <div class="icon-people-task--3">
+                                            <p class="pepole-text-icon">JS</p>
+                                        </div>
+                                    </div>
+                                    <p class="main-info__data-text"> a month ago</p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <div class="line"></div>
+                        <li class="main-contnet__item">
+
+                            <div class="main-inf0__task-info">
+                                <div class="main-info__color-task">
+                                </div>
+                                <p class="main-content__title-task">
+                                    Task-User
+                                </p>
+
+                                <div class="text-container--4">
+
+                                    <p class="lvl-task">
+                                        Low
+                                    </p>
+                                    <div class="icon-container">
+                                        <div class="icon-people-task--1">
+                                            <p class="pepole-text-icon">WD</p>
+                                        </div>
+                                        <div class="icon-people-task--2">
+                                            <p class="pepole-text-icon">TD</p>
+                                        </div>
+                                        <div class="icon-people-task--3">
+                                            <p class="pepole-text-icon">JS</p>
+                                        </div>
+                                    </div>
+                                    <p class="main-info__data-text"> a month ago</p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <div class="line"></div>
+                    </ul>
+                    <div class="main-info__user-container">
+                        <div class="main-info__user-text-container">
+                            <h1 class="task-title">Full Name</h1>
+                            <div class="main-info__user-text-container--2">
+                                <h2 class="task-info__text--2">Status</h2>
+                                <h2 class="task-info__text--2">Created At</h2>
+                            </div>
+                        </div>
+                        <div class="line--2"></div>
+                        <ul class="main-list-user">
+                            <li class="main-info__user-avatar-item">
+                                <div class="main-info__user-avatar-container">
+                                    <div class="user-avatar">
+                                        KL
+                                    </div>
+                                    <div class="main-info__text-container">
+                                        <p class="name-user">
+                                           New User
+                                        </p>
+                                        <p class="job-title">
+                                            Frontend
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-info__container-active-user">
+                                    <p class="status-user blue">Active</p>
+                                    <p class="date-create-user">a month ago</p>
+                                </div>
+                            </li>
+                            <div class="line--2"></div>
+                            <li class="main-info__user-avatar-item">
+                                <div class="main-info__user-avatar-container">
+                                    <div class="user-avatar">
+                                        KL
+                                    </div>
+                                    <div class="main-info__text-container">
+                                        <p class="name-user">
+                                           New User
+                                        </p>
+                                        <p class="job-title">
+                                            Frontend
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-info__container-active-user">
+                                    <p class="status-user blue">Active</p>
+                                    <p class="date-create-user">a month ago</p>
+                                </div>
+                            </li>
+                            <div class="line--2"></div>
+                            <li class="main-info__user-avatar-item">
+                                <div class="main-info__user-avatar-container">
+                                    <div class="user-avatar">
+                                        KL
+                                    </div>
+                                    <div class="main-info__text-container">
+                                        <p class="name-user">
+                                           New User
+                                        </p>
+                                        <p class="job-title">
+                                            Frontend
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-info__container-active-user">
+                                    <p class="status-user blue">Active</p>
+                                    <p class="date-create-user">a month ago</p>
+                                </div>
+                            </li>
+                            <div class="line--2"></div>
+                            <li class="main-info__user-avatar-item">
+                                <div class="main-info__user-avatar-container">
+                                    <div class="user-avatar">
+                                        KL
+                                    </div>
+                                    <div class="main-info__text-container">
+                                        <p class="name-user">
+                                           New User
+                                        </p>
+                                        <p class="job-title">
+                                            Frontend
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-info__container-active-user">
+                                    <p class="status-user blue">Active</p>
+                                    <p class="date-create-user">a month ago</p>
+                                </div>
+                            </li>
+                            <div class="line--2"></div>
+                            <li class="main-info__user-avatar-item">
+                                <div class="main-info__user-avatar-container">
+                                    <div class="user-avatar">
+                                        KL
+                                    </div>
+                                    <div class="main-info__text-container">
+                                        <p class="name-user">
+                                           New User
+                                        </p>
+                                        <p class="job-title">
+                                            Frontend
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main-info__container-active-user">
+                                    <p class="status-user blue">Active</p>
+                                    <p class="date-create-user">a month ago</p>
+                                </div>
+                            </li>
+                            <div class="line--2"></div>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div id="task-content" class="content-item">
                 <h2>Task</h2>
@@ -207,10 +461,10 @@
         document.addEventListener('DOMContentLoaded', () => {
             showTab('dashboard');
         });
-       
-    
+
+
     </script>
-    
+
 </body>
 
 </html>
